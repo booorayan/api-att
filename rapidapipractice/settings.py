@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
+import django
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,9 +26,7 @@ SECRET_KEY = 'ghv*xr&d5n_dgd%k^^iu50-@pg7ljw=jejm4i!2@hh0&xp!gpn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'api-att.herokuapp.com',
-]
+ALLOWED_HOSTS = ['api-att.herokuapp.com']
 
 
 # Application definition
@@ -39,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api',
+    'rapidapipractice.api',
     'rest_framework',
 ]
 
